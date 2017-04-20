@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_drink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hppav.restraunt.drink">
+
+    <TextView
+        android:text="120/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Margarita"
+        android:layout_alignStart="@+id/textView4"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="150/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/beer"
+        android:layout_alignBottom="@+id/beer"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="PRICE"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Starters"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView9" />
+
+    <CheckBox
+        android:text="Beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/beer"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="enter "
+        android:layout_alignBaseline="@+id/ms"
+        android:layout_alignBottom="@+id/ms"
+        android:layout_alignStart="@+id/editText" />
+
+    <CheckBox
+        android:text="Mango Shake "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ms"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:onClick="onClick"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:text="Blue Lagoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bl"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/e5"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:text="Margarita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Margarita"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/e1"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:text="Bloody Mary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bm"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/e2"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="170/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/e5"
+        android:layout_alignBottom="@+id/e5"
+        android:layout_alignStart="@+id/textView5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter "
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignBaseline="@+id/bl"
+        android:layout_alignBottom="@+id/bl"
+        android:layout_alignStart="@+id/e5"
+        />
+
+    <TextView
+        android:text="330/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignStart="@+id/textView6"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="300/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignStart="@+id/textView7"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="DRINKS"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Starters"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="QUANTITY"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/e1"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:text="ITEMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toEndOf="@+id/beer"
+        android:layout_alignTop="@+id/textView9" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/e5"
+        android:hint="enter "
+        android:layout_alignTop="@+id/bm"
+        android:layout_alignEnd="@+id/Starters"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/e2"
+        android:hint="enter "
+        android:layout_alignBaseline="@+id/Margarita"
+        android:layout_alignBottom="@+id/Margarita"
+        android:layout_alignStart="@+id/e5" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/e1"
+        android:hint="enter "
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/e2" />
+</RelativeLayout>

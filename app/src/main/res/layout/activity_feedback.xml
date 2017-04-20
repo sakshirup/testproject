@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hppav.restraunt.feedback">
+
+
+    <TextView
+        android:text="Enter your feedback so that we can improve our services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView19"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/editText9"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:layout_below="@+id/editText9"
+        android:layout_alignEnd="@+id/editText9"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editText10"
+        android:paddingLeft="10dp"/>
+
+    <Spinner
+        android:id="@+id/SpinnerFeedbackType"
+        android:layout_height="50dp"
+
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:entries="@array/feedbacktypelist"
+        android:layout_below="@+id/editText10"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp">
+    </Spinner>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_below="@+id/editText11"
+        android:layout_marginTop="12dp"
+
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textPersonName"
+        android:hint="Feedback details..."
+        android:background="@drawable/border"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/editText11"
+        android:layout_below="@+id/SpinnerFeedbackType"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

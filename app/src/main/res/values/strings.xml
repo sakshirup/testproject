@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Restraunt</string>
+    <string name="snacks"></string>
+    <string name="action_settings">Settings</string>
+    <string-array name="snack_names">
+        <item>Fruit Salad</item>
+        <item>Vegetable Salad</item>
+        <item>Cold Pasta Salad</item>
+
+    </string-array>
+    <string name="snacks1"></string>
+    <string-array name="feedbacktypelist">
+        <item>Good</item>
+        <item>Bad</item>
+        <item>Average</item>
+        <item>Poor</item>
+
+    </string-array>
+
+</resources>

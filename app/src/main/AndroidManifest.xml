@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hppav.restraunt">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/restau"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Create_New_Account"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Starter"
+            android:parentActivityName=".Home" />
+        <activity android:name=".sms" />
+        <activity
+            android:name=".location"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".about_us"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".feedback"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Dessert"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Salad" />
+        <activity android:name=".main_course" />
+        <activity android:name=".rate" />
+        <activity android:name=".timer" />
+        <activity android:name=".drink"></activity>
+    </application>
+
+</manifest>

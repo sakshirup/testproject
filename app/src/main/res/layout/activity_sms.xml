@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hppav.restraunt.sms">
+
+    <TextView
+        android:text="Thanks!!! for becoming a trusted member of our restaurant,now you can enjoy all the special offers and memberships"
+        android:layout_width="match_parent"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="You will receive a SMS as the confirmation of your membership"
+        android:layout_width="match_parent"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="139dp"
+        android:id="@+id/textView12" />
+
+    <Button
+        android:text="CONTINUE ORDERING"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:id="@+id/button3"
+        android:background="@android:color/holo_orange_dark" />
+</RelativeLayout>
