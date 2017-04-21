@@ -1,5 +1,6 @@
 package com.example.hppav.restraunt;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,16 @@ public class Salad extends AppCompatActivity {
                 break;
 
         }
+        Button drink=(Button)findViewById(R.id.button9);
+        drink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent o5=new Intent(Salad.this,timer.class);
+                startActivity(o5);
+            }
+        });
 
     }
+
 }

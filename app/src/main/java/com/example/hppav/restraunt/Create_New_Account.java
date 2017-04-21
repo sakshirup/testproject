@@ -2,6 +2,7 @@ package com.example.hppav.restraunt;
 
 import android.Manifest;
 import android.app.ActionBar;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -46,38 +47,19 @@ public class Create_New_Account extends AppCompatActivity {
        phoneNo = txtphoneNo.getText().toString();
 
        name=username.getText().toString();
+        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+        PendingIntent pi= PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
+
+        //Get the SmsManager instance and call the sendTextMessage method to send message
+        SmsManager sms=SmsManager.getDefault();
+        sms.sendTextMessage(phoneNo, null,"Hi"+name+"Your account has been successfully created.Now enjoy the special offers for our registered customers", pi,null);
+
+        Toast.makeText(getApplicationContext(), "Message Sent successfully!",
+                Toast.LENGTH_LONG).show();
 
 
 
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.SEND_SMS)
-                != PackageManager.PERMISSION_GRANTED) {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.SEND_SMS)) {
-            } else {
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.SEND_SMS},
-                        MY_PERMISSIONS_REQUEST_SEND_SMS);
-            }
-        }
-    }
 
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case MY_PERMISSIONS_REQUEST_SEND_SMS: {
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phoneNo, null, "Thanks!!!!! for becoming the trusted member of SLICE OF LIFE.We will try to serve you the best", null, null);
-                    Toast.makeText(getApplicationContext(), "SMS sent.",
-                            Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getApplicationContext(),
-                            "SMS faild, please try again.", Toast.LENGTH_LONG).show();
-                    return;
-                }
-            }
-        }
 
     }
 }

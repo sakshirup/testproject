@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.hppav.restraunt.drink">
+    tools:context="com.example.hppav.restraunt.drink"
+    android:background="?android:attr/colorPressedHighlight">
 
     <TextView
         android:text="120/-"
@@ -216,4 +217,15 @@
         android:hint="enter "
         android:layout_alignTop="@+id/textView4"
         android:layout_alignStart="@+id/e2" />
+
+    <Button
+        android:text="PLACE ORDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorAccent"
+        android:onClick="drink"/>
 </RelativeLayout>

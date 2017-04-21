@@ -213,4 +213,15 @@
         android:layout_below="@+id/price"
         android:layout_alignStart="@+id/apple_pie" />
 
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:layout_below="@+id/cheesecake"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:onClick="dessert"/>
+
 </RelativeLayout>

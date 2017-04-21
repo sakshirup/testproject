@@ -1,10 +1,12 @@
 package com.example.hppav.restraunt;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,6 +31,15 @@ public class drink extends AppCompatActivity implements View.OnClickListener {
         fries.setOnClickListener(this);
         pizza.setOnClickListener(this);
         pasta.setOnClickListener(this);
+        Button drink=(Button)findViewById(R.id.button8);
+        drink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent o1=new Intent(drink.this,timer.class);
+                startActivity(o1);
+            }
+        });
     }
     int p1 , p2 , p3 , p4 , p5 ;
     public void onClick(View v)
@@ -87,5 +98,6 @@ public class drink extends AppCompatActivity implements View.OnClickListener {
 
 
     }
+
 }
 

@@ -219,4 +219,15 @@
         android:layout_alignEnd="@+id/Margarita"
         android:textStyle="bold"/>
 
+    <Button
+        android:text="PLACE ORDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="starter"/>
+
 </RelativeLayout>
