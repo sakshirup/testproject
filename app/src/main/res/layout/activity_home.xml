@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/dessert"
         android:id="@+id/dessertimg"
         android:layout_weight="1"
-        android:background="@drawable/circle"
+
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
