@@ -151,7 +151,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/starter"
         android:onClick="starter"
-       android:shadowDx="3"
+        android:shadowDx="3"
         android:shadowDy="2"
         android:shadowRadius="8"
         android:paddingLeft="30dp"

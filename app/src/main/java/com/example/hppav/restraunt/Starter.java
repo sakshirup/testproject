@@ -19,7 +19,7 @@ public class Starter extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starter);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Home");
+        getSupportActionBar().setTitle("Starter");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffff8800")));
         CheckBox burger = (CheckBox) findViewById(R.id.beer);
         CheckBox dimsums = (CheckBox) findViewById(R.id.bm);

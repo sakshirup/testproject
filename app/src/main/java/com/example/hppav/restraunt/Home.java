@@ -67,37 +67,37 @@ public class Home extends AppCompatActivity {
         });
     }
 
-        @Override
-        public boolean onCreateOptionsMenu (Menu m)
-        {
-            getMenuInflater().inflate(R.menu.menu_act, m);
-            return super.onCreateOptionsMenu(m);
-        }
-
-        @Override
-        public boolean onOptionsItemSelected (MenuItem item){
-            switch (item.getItemId()) {
-                case R.id.Location:
-                    Intent i = new Intent(Home.this, location.class);
-                    startActivity(i);
-                    return true;
-
-                case R.id.About_us:
-                    Intent k = new Intent(Home.this, about_us.class);
-                    startActivity(k);
-                    return true;
-
-                case R.id.Feedback:
-                    Intent j = new Intent(Home.this, feedback.class);
-                    startActivity(j);
-                    return true;
-
-
-                default:
-                    return super.onOptionsItemSelected(item);
-            }
-
-
-        }
+    @Override
+    public boolean onCreateOptionsMenu (Menu m)
+    {
+        getMenuInflater().inflate(R.menu.menu_act, m);
+        return super.onCreateOptionsMenu(m);
     }
+
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.Location:
+                Intent i = new Intent(Home.this, location.class);
+                startActivity(i);
+                return true;
+
+            case R.id.About_us:
+                Intent k = new Intent(Home.this, about_us.class);
+                startActivity(k);
+                return true;
+
+            case R.id.Feedback:
+                Intent j = new Intent(Home.this, feedback.class);
+                startActivity(j);
+                return true;
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+    }
+}
 

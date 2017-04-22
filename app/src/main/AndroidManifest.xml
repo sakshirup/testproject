@@ -3,6 +3,7 @@
     package="com.example.hppav.restraunt">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Main2Activity"
@@ -32,21 +29,32 @@
         <activity android:name=".sms" />
         <activity
             android:name=".location"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".navi" />
         <activity
             android:name=".about_us"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".navi" />
         <activity
             android:name=".feedback"
-            android:parentActivityName=".Home" />
+            android:parentActivityName=".navi" />
         <activity
             android:name=".Dessert"
             android:parentActivityName=".Home" />
         <activity android:name=".Salad" />
         <activity android:name=".main_course" />
-        <activity android:name=".rate" />
+        <activity android:name=".rate"
+            android:parentActivityName=".navi"/>
         <activity android:name=".timer" />
-        <activity android:name=".drink"></activity>
+        <activity android:name=".drink" />
+        <activity
+            android:name=".navi"
+            android:label="@string/title_activity_navi"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
