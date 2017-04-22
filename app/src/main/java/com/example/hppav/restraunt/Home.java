@@ -4,12 +4,14 @@ import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class Home extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Home");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffff8800")));
-        Button b1 = (Button) findViewById(R.id.starter);
+        ImageButton b1 = (ImageButton) findViewById(R.id.starterimg);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +32,7 @@ public class Home extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        Button b3 = (Button) findViewById(R.id.mc);
+        ImageButton b3 = (ImageButton) findViewById(R.id.maincourseimg);
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +40,7 @@ public class Home extends AppCompatActivity {
                 startActivity(k);
             }
         });
-        Button b4 = (Button) findViewById(R.id.salad);
+        ImageButton b4 = (ImageButton) findViewById(R.id.imageView6);
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +48,7 @@ public class Home extends AppCompatActivity {
                 startActivity(l);
             }
         });
-        Button b5 = (Button) findViewById(R.id.drinks);
+        ImageButton b5 = (ImageButton) findViewById(R.id.imageView5);
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +57,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        Button b2=(Button)findViewById(R.id.dessert);
+        ImageButton b2=(ImageButton)findViewById(R.id.dessertimg);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

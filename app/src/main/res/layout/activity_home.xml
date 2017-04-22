@@ -13,7 +13,7 @@
     tools:context="com.example.hppav.restraunt.Home">
 
 
-    <ImageView
+    <ImageButton
         android:layout_width="100dp"
         app:srcCompat="@drawable/mc"
         android:id="@+id/maincourseimg"
@@ -26,50 +26,21 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Drinks"
-        android:id="@+id/drinks"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:shadowDx="3"
-        android:shadowDy="2"
-        android:shadowRadius="8"
-        tools:background="@drawable/border1"
-        android:background="@drawable/border1"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/starter" />
-
-    <ImageView
-
-        app:srcCompat="@drawable/drinks_image"
-        android:id="@+id/imageView5"
-        android:layout_width="100dp"
-        android:background="@drawable/border1"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-
-        android:layout_height="100dp"
-        android:layout_above="@+id/drinks"
-        android:layout_toStartOf="@+id/dessert" />
-
-    <ImageView
+    <ImageButton
         app:srcCompat="@drawable/dessert"
         android:id="@+id/dessertimg"
         android:layout_weight="1"
-        android:background="@drawable/border1"
+        android:background="@drawable/circle"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignTop="@+id/imageView6"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="100dp"
         app:srcCompat="@drawable/starters"
         android:id="@+id/starterimg"
@@ -82,22 +53,22 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Salad"
+    <TextView
+        android:text="SALAD"
         android:id="@+id/salad"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:shadowDx="3"
-        android:shadowDy="2"
-        android:shadowRadius="8"
-        tools:background="@drawable/border1"
-        android:background="@drawable/border1"
+        android:textStyle="bold|italic"
 
+        android:shadowDy="2"
+        android:paddingLeft="40dp"
+        android:shadowRadius="8"
         android:layout_alignBaseline="@+id/starter"
         android:layout_alignBottom="@+id/starter"
         android:layout_toEndOf="@+id/starter" />
 
-    <ImageView
+    <ImageButton
 
         app:srcCompat="@drawable/salad1"
         android:id="@+id/imageView6"
@@ -112,7 +83,69 @@
         android:layout_above="@+id/starter"
         android:layout_alignStart="@+id/maincourseimg" />
 
-    <Button
+    <TextView
+        android:text="DESSERT"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dessert"
+        android:onClick="dessert"
+        android:shadowDx="3"
+        android:textStyle="bold|italic"
+        android:shadowDy="2"
+        android:shadowRadius="8"
+        android:paddingLeft="40dp"
+        android:layout_alignBaseline="@+id/salad"
+        android:layout_alignBottom="@+id/salad"
+        android:layout_toEndOf="@+id/mc" />
+
+    <TextView
+        android:text="MAIN COURSE"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc"
+        android:onClick="main_course"
+        android:textStyle="bold|italic"
+
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="8"
+        android:paddingLeft="40dp"
+        android:layout_below="@+id/maincourseimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageButton
+
+        app:srcCompat="@drawable/drinks_image"
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:background="@drawable/border1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        android:layout_height="100dp"
+        android:layout_above="@+id/drinks"
+        android:layout_alignEnd="@+id/drinks"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="DRINKS"
+        android:id="@+id/drinks"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="8"
+        android:paddingLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/starter"
+        android:textStyle="bold|italic"
+
+        android:layout_marginBottom="11dp" />
+
+    <TextView
         android:text="STARTER"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -121,36 +154,12 @@
        android:shadowDx="3"
         android:shadowDy="2"
         android:shadowRadius="8"
-        android:background="@drawable/border1"
+        android:paddingLeft="30dp"
+        android:textStyle="bold|italic"
+
+        android:layout_marginTop="16dp"
         android:layout_below="@+id/starterimg"
-        android:layout_toStartOf="@+id/mc" />
-
-    <Button
-        android:text="MAIN COURSE"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/mc"
-        android:onClick="main_course"
-        android:shadowDx="3"
-        android:shadowDy="2"
-        android:shadowRadius="8"
-        android:background="@drawable/border1"
-        android:layout_below="@+id/maincourseimg"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="DESSERT"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/dessert"
-        android:onClick="dessert"
-        android:shadowDx="3"
-        android:shadowDy="2"
-        android:shadowRadius="8"
-        tools:background="@drawable/border1"
-        android:background="@drawable/border1"
-        android:layout_below="@+id/dessertimg"
-        android:layout_toEndOf="@+id/salad" />
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
